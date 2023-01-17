@@ -11,7 +11,8 @@
     function App() {
       const [counter, modifier] = React.useState(0);
       const onClick = () => {
-        modifier(counter+1);
+        // modifier(counter+1);
+        modifier((current) => current + 1);
       };
       return (
         <div>
