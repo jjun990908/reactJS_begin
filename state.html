@@ -48,7 +48,7 @@
         </div>
       );
     }
-    function KMToMiled() {
+    function KmtoMiles() {
       const [amount, setAmount] = React.useState(0);
       const [flipped, changeFlip] = React.useState(true);
       const onChange = (event) => {
@@ -106,7 +106,7 @@
           <hr />
           {index == 'xx' ? 'Please select your units' : null}
           {index == '0' ? <MinutesToHours /> : null}
-          {index == '1' ? <KMToMiled /> : null}
+          {index == '1' ? <KmtoMiles /> : null}
         </div>
       );
     }
